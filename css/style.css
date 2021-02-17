@@ -1,0 +1,155 @@
+.title {
+    font-family: 'Sigmar One', cursive;
+    margin-left: 50px;
+    color: antiquewhite;
+    font-size: 45px;
+    display: inline;
+    /* background-color: blue; */
+    text-align: center;
+    margin: 0px auto;
+    left: 50;
+    text-shadow: 2px 2px 0 rgb(25, 24, 26), -2px -2px 0 rgb(25, 24, 26), 2px -2px 0 rgb(25, 24, 26), -2px 2px 0 rgb(25, 24, 26), 0px 2px 0 rgb(25, 24, 26), 2px 0px 0 rgb(25, 24, 26), 0px -2px 0 rgb(25, 24, 26), -2px 0px 0 rgb(25, 24, 26), 2px 2px 10px rgb(25, 24, 26);
+}
+
+.alwaysVisible #logo {
+    z-index: 9999999999999;
+    width: 70px;
+    height: auto;
+    position: absolute;
+    clear: both;
+}
+
+#glass {
+    width: 100px;
+    height: auto;
+    margin-right: -75px;
+}
+
+img {
+    height: 300px;
+    width: 200px;
+}
+
+.item-a {
+    /* background-color: yellowgreen; */
+    margin-left: -300px;
+    width: 330px;
+    grid-area: cardOne;
+}
+
+.item-b {
+    grid-area: cardTwo;
+    margin-left: -300px;
+    /* padding-left: 12%; */
+    /* width: 300px; */
+    background-color: orange;
+}
+
+.item-c {
+    grid-area: cardThree;
+    margin-left: -300px;
+    /* padding-left: -70px; */
+    /* width: 330px; */
+    background-color: lightcoral;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 50%;
+    /* background-color: aquamarine; */
+    text-align: center;
+    overflow-x: scroll;
+    margin-top: 15%;
+    margin-left: 5%;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 350px 250px 350px;
+    grid-template-rows: auto;
+    grid-template-areas: "cardOne cardTwo cardThree";
+}
+
+.cardOne,
+.cardTwo {
+    position: relative;
+}
+
+section,
+.section {
+    color: antiquewhite;
+    font-size: 37px;
+    padding: 70px 10px 0 10px;
+    margin-left: 15px;
+    text-shadow: 2px 2px 0 rgb(25, 24, 26), -2px -2px 0 rgb(25, 24, 26), 2px -2px 0 rgb(25, 24, 26), -2px 2px 0 rgb(25, 24, 26), 0px 2px 0 rgb(25, 24, 26), 2px 0px 0 rgb(25, 24, 26), 0px -2px 0 rgb(25, 24, 26), -2px 0px 0 rgb(25, 24, 26), 2px 2px 10px rgb(25, 24, 26);
+}
+
+.thresholdOne,
+.thresholdTwo,
+.thresholdThree {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 175px;
+    height: 300px;
+}
+
+.thresholdTwo {
+    background-image: url("../Img/timCurry.jpg");
+    background-size: 200px;
+    border: 2px solid black;
+}
+
+.doorOne,
+.doorTwo,
+.doorThree {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 550px;
+    -webkit-transform-origin: 0 50%;
+    -webkit-transition: all 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-perspective: 550px;
+    -moz-transform-origin: 0 50%;
+    -moz-transition: all 1s;
+    -o-transform-style: preserve-3d;
+    -o-perspective: 550px;
+    -o-transform-origin: 0 50%;
+    -o-transition: all 1s;
+    transform-style: preserve-3d;
+    perspective: 550px;
+    transform-origin: 0 50%;
+    transition: all 1s;
+}
+
+.doorOne:hover,
+div.doorTwo:hover,
+div.doorThree:hover {
+    -webkit-transform: scale(0.05, 1) skew(0deg, 20deg);
+    -moz-transform: scale(0.05, 1) skew(0deg, 20deg);
+    -o-transform: scale(0.05, 1) skew(0deg, 20deg);
+    transform: scale(0.05, 1) skew(0deg, 20deg);
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    background: linear-gradient(45deg, #010, #333, #010);
+}
+
+.cursor-box {
+    width: 30em;
+    height: 30em;
+    position: absolute;
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 1.0);
+    border-radius: 50%;
+}
+
+.cursor-box-child {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: inset 0px 0px 200px 75px rgba(0, 0, 0, 1.0);
+}
