@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&family=Rock+Salt&display=swap');
 .title {
     font-family: 'Sigmar One', cursive;
     margin-left: 50px;
@@ -23,6 +24,18 @@
     width: 100px;
     height: auto;
     margin-right: -75px;
+}
+
+.clueBackground {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/876487/thumb/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
 }
 
 img {
@@ -60,7 +73,7 @@ img {
     /* background-color: aquamarine; */
     text-align: center;
     overflow-x: scroll;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: 5%;
     justify-content: center;
     justify-items: center;
@@ -97,6 +110,11 @@ section,
     background-image: url("../Img/timCurry.jpg");
     background-size: 200px;
     border: 2px solid black;
+}
+
+.glass {
+    height: 100px;
+    width: auto;
 }
 
 .doorOne,
