@@ -9,6 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
 <title>About Us</title>
 <link rel="icon" href="Img/glass.png" type="image/gif" sizes="16x16">
+<script language="javascript" type="text/javascript">
+function playSound(soundfile) {
+document.getElementById("dummy").innerHTML=
+    "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+</script>
 </head>
 
 
@@ -21,7 +27,7 @@
 <div class="layer one show" id="title_page">
     <div id="titleContainer">
         <h2 class="AboutUs">Oh, hello.</h2>
-        <h3> Welcome to Git_a_Clue</h3>
+        <h3> Welcome to Git a Clue</h3>
         <h4>Use your arrow keys to go behind the scenes <br> and uncover more about this dastardly game<br> of blood-lust revenge and greed </h4>
     </div>    
 </div> 
@@ -30,12 +36,34 @@
 
 <div class="layer two" id="background">
     <h2>Who are we? </h2>
-    <h3>Glad you asked. </h3>
+    <h3>Glad you asked.</h3> <h4 id="forSpace">Let's review who we think did it...</h4>
     <div class="img-container">
-        <div><img class="intro" src="https://via.placeholder.com/250x350.png/000000/FFFFFF/?text=AmberIntro"></div>
-        <div><img class="intro" src="https://via.placeholder.com/250x350.png/000000/FFFFFF/?text=KimIntro"></div>
-        <div><img class="intro" src="https://via.placeholder.com/250x350.png/000000/FFFFFF/?text=MattIntro"></div>
-        <div><img class="intro" src="https://via.placeholder.com/250x350.png/000000/FFFFFF/?text=SianIntro"></div>
+
+        <div class="intro">
+            <img class="team-cards" id="amber" src="Img/amber.JPEG">
+            <p class="intro-text">Who: <br><small> Lena Eivy </small><br><br>What:<br> <small>Cat Scratches</small> <br> <br>Where:<br> <small>In the student fridge </small></p>         
+        </div>
+
+
+        <div class="intro">
+            <img id="sian" class="team-cards" src="Img/sian.JPEG">
+            <p class="intro-text">Who: <br> <small>Ryan Gallaway </small><br><br>What:<br> <small>Pank dranks</small> <br> <br>Where:<br><small>Mexico</small> </p>            
+        </div>
+
+
+        <div class="intro">
+            <img class="team-cards" src="Img/kim.JPEG">
+            <p class="intro-text" id="kim" >Who: <br> 
+            <small>Aaron Imbrock </small>
+            <br><br>What:<br><small>Islay single-malt Arbeg Uigeadail, Served Neat </small><br><br>Where:<br><small>The Ada Lovelace Lounge </small></p>            
+        </div>
+
+        <div class="intro">
+            <img id="matt" class="team-cards" src="Img/matt.JPEG">
+            <p class="intro-text">Who: <br> <small>Vince Masten</small> <br><br>What:<br><small> Too much Recursion </small><br> <br>Where:<br><small>At the whiteboard</small> </p>             
+        </div>
+
+
     </div> 
 </div>
 
@@ -46,39 +74,52 @@
     <img id="chalk" src="img/JohnHomeIcon.png">
     <ul id="strength">
         <li>Making amazing, ground breaking, revolutionary graphics</li><br>
-        <li>Communication</li><br>
-        <li>Creativity</li>
+        <li>Creative Testing</li><br>
+        <li>Overcoming tough Gituations</li>
     </ul>
 </div> 
 
 
 
 <div class="layer four" id="weakness">
-    <h2>Weakness </h2>
+    <h2>Opportunities </h2>
     <br><br><br><br><br><br><br><br><br><br>
     <div id="weakContainer">
-        <p class="neon" data-text="U">Hand<span class="flicker-slow">l</span>ing <br> A</vr><span class="flicker-fast">m</span>biguity</p>
+        <p class="neon" > Crea<span class="flicker-slow">t</span>ing to<span class="flicker-fast">u</span>gh <span class="flicker-slow">G</span>ituations</span> <br> <span class="flicker-slow">&</span> <br> <span class="flicker-slow">T</span>ough to <span class="flicker-fast">t</span>est code</p>
+        <!--<p class="neon" data-text="U">Hand<span class="flicker-slow">l</span>ing <br> A</vr><span class="flicker-fast">m</span>biguity</p>-->
     </div>
 </div> 
 
 
 
 <div class="layer five" id="tech_used">
-    <h2>Technologies Used <br> & Testing</h2>
-    <div><img src="https://via.placeholder.com/960x150.png/000000/FFFFFF/?text=PicOfTestingPercentage"></div>
+    <h2>Stretch Goals</h2>
+    <!--<div><img src="https://via.placeholder.com/960x150.png/000000/FFFFFF/?text=PicOfTestingPercentage"></div>-->
         <div class="windowOne">
             <div class="row">
-                <div class="column">
-                    <div><img src="https://via.placeholder.com/250/000000/FFFFFF/?text=Tech"></div>
+                <div class="column" >
+                    <div><img id="sg_card_one" src="Img/add_sound.PNG"></div>
                 </div>
-                <div class="column">
-                    <div><img src="https://via.placeholder.com/250/000000/FFFFFF/?text=Tech"></div>
+                <div class="column" >
+                    <div><img id="sg_card_two" src="Img/ascii.PNG"></div>
                 </div>
-                <div class="column">
-                    <div><img src="https://via.placeholder.com/250/000000/FFFFFF/?text=Tech"></div>
+                <div class="column" >
+                    <div><img id="sg_card_three" src="Img/color_terminal.PNG"></div>
                 </div>
             </div>
         </div>
+
+        <div class="windowTwo">
+            <div class="row">
+                <div class="column" >
+                    <div><img id="sg_card_four" src="Img/communication.PNG"></div>
+                </div>
+                <div class="column" >
+                    <div><img id="sg_card_five" src="Img/connection.PNG"></div>
+                </div>
+            </div>
+        </div>
+
         <section class="container">
             <figure class="img-stack">
             <img src="img/clue_card.jpg" class="img-stack__image" />
@@ -97,22 +138,105 @@
 
 
 <div class="layer six">
-    <h2>Problem Domain</h2>
-    <a class="modal-open" href="#modal"><img id="cat" src="Img/detectiveCat.gif"></a>
+    <h2>Want to know more?</h2>
+    <h6>Just knock on the door <br>& see what's in store</h6>
+    <a onclick="playSound('Img/knock.mp3');" class="modal-open" href="#modal"><img id="cat" src="Img/door.jpg"><span id="dummy"></span></a>
     <div class="modal" id="modal">
         <div class="modal-content">
         <a href="#" class="modal-close" title="Close Modal">X</a>
         <h3>An Important Message from Brook Riggio</h3>
-            <div class="modal-area">
+            <!--<div class="modal-area">
             <p>Well hello and welcome, as you well know, an unusual invitation has gathered us all in this luxurious virtual classroom on this stormy night. Nobody knows each other, but you all have something in common: you are all being blackmailed by the night principle instructor, Mr. John Cokos. Things have taken a turn and Mr. Cokos has been muuuuurdered - Who’s the murderer? How did it happen? And Where?!</p><br>
 
             <p>I need you, team Git A Clue, to build me a CLI app that will run in the terminal and through a process of turns, dice rolls, hints, and elimination to reveal the MURDERER & the blood-lust that motivated this heinous crime!</p><br>
 
             <p>Good luck team, Code Fellows is counting on you to solve this mystery</p>
+            </div>-->
+
+
+            <div className="player">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oigThQcY43I?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
+
         </div>
     </div>
 </div>
+
+
+
+
+
+<div class="layer eight" id="sus">
+    <h2>Who did it? </h2>
+    <div class="sus_container">
+        <div class="row-container">
+
+            <img class="suspect" id="sus-one" src="Img/roger.JPEG">
+
+            <img class="suspect" id="sus-two" src="Img/robin.JPEG">
+
+            <img class="suspect"  id="sus-three"src="Img/phil.JPEG">
+
+            <img class="suspect" id="sus-four" src="Img/heather.JPEG">
+
+            <img class="suspect" id="sus-five" src="Img/dario.JPEG">
+
+            <img class="suspect" id="sus-six" src="Img/jeff.JPEG">
+
+    </div>
+    </div>
+    </div>
+
+
+
+<div class="layer nine" id="object">
+    <h2>How did it happen? </h2>
+    <div class="obj_container">
+        <div class="row-container">
+
+            <img class="object" id="obj-one" src="Img/wb.JPEG">
+
+            <img class="object" id="obj-two" src="Img/en.JPEG">
+
+            <img class="object"  id="obj-three"src="Img/kb.JPEG">
+
+            <img class="object" id="obj-four" src="Img/dn.JPEG">
+
+            <img class="object" id="obj-five" src="Img/ap.JPEG">
+
+            <img class="object" id="obj-six" src="Img/lt.JPEG">
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+<div class="layer ten" id="place">
+    <h2>Where did it happen? </h2>
+    <div class="place_container">
+        <div class="plc-container">
+
+            <img class="place" id="plc-one" src="Img/babbage.JPEG">
+
+            <img class="place" id="plc-two" src="Img/lovelace.JPEG">
+
+            <img class="place"  id="plc-three"src="Img/hall.JPEG">
+
+            <img class="place" id="plc-four" src="Img/hopper.JPEG">
+
+            <img class="place" id="plc-five" src="Img/kitchen.JPEG">
+
+            <img class="place" id="plc-six" src="Img/ballroom.JPEG">
+
+            <img class="place" id="plc-seven" src="Img/study.JPEG">
+
+    </div>
+    </div>
+    </div>
 
 
 
@@ -142,10 +266,10 @@
 
 
 
-
             </article>
             <ul class="bullets"></ul>
 
 <script src="app.js"></script>
+
 </body>
 </html>

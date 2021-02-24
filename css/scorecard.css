@@ -5,8 +5,33 @@
     z-index: 9999999999999;
     width: 70px;
     height: auto;
-    position: absolute;
-    clear: both;
+    grid-area: main;
+}
+
+.mod-contain {
+    grid-area: local;
+}
+
+#map {
+    width: 70px;
+    float: right;
+}
+
+.card-container {
+    grid-area: card;
+}
+
+.menu-contain {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 400px;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas: "main rules local card";
 }
 
 .title {
@@ -15,7 +40,6 @@
     color: antiquewhite;
     font-size: 45px;
     display: inline;
-    /* background-color: blue; */
     text-align: center;
     margin: 0px auto;
     left: 50;
@@ -126,12 +150,276 @@ h3 {
     margin-bottom: -10px;
 }
 
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    margin-bottom: -10px;
+}
+
 p,
 li {
-    line-height: 1;
+    line-height: 1.1;
     font-family: 'Architects Daughter', cursive;
+}
+
+.bold li {
+    font-weight: 800;
 }
 
 #robin {
     margin-bottom: -20px;
+}
+
+#campus {
+    width: 700px;
+}
+
+a.modal-open,
+a.two-modal-open {
+    background-image: url("Img/mapIcon");
+    text-decoration: none;
+}
+
+.modal,
+.modal-window-two,
+.modal-window-three {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal:target,
+.two-modal:target {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    z-index: +1;
+}
+
+.modal-content,
+.two-modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    border-radius: 4px;
+    transform: translate(300%);
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.modal:target .modal-content {
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out;
+    transition-delay: .5s;
+    z-index: 9999;
+    opacity: 1;
+}
+
+.modal-close,
+.modal-close-rules,
+.modal-close-card {
+    float: right;
+    text-decoration: none;
+    padding: 22px 22px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 800;
+    transition: all .5s ease-in-out;
+    z-index: +1;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 0 4px 0 0;
+    margin-top: 50px;
+}
+
+.modal-close:hover,
+.modal-close-rules:hover,
+.modal-close-card:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-area {
+    padding: 5px;
+}
+
+.modal-area input[type="radio"] {
+    display: none;
+}
+
+.modal-area input[type="radio"]:checked+label {
+    background: #fff;
+    color: #424242;
+}
+
+#arrow {
+    height: 25px;
+    margin-bottom: -8px;
+}
+
+
+/* ***************************** */
+
+.modal-window-two,
+.modal-window-three {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.modal-window-two:target,
+.modal-window-three:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window-two div,
+.modal-window-three div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: white;
+}
+
+.modal-window-two h1,
+.modal-window-three h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+}
+
+.modal-close {
+    color: #aaa;
+    /* position: absolute; */
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: auto;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.rules-container,
+.two-mod-contain {
+    justify-content: center;
+    align-items: center;
+    grid-area: rules;
+}
+
+.modal-window-two div {
+    border-radius: 1rem;
+    /* background-color: whitesmoke; */
+    width: 500px;
+    height: 700px;
+    overflow: scroll;
+    background-image: url("Img/wb_wheels/png");
+}
+
+.modal-window-two div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: transparent;
+    padding: 1em 1.5em;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.btn i {
+    padding-right: 0.3em;
+}
+
+#rule_icon,
+#card_icon {
+    width: 70px;
+}
+
+.modal-close-rulefrs {
+    color: #aaa;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    width: auto;
+    text-decoration: none;
+}
+
+#rule_outline,
+#card_outline {
+    border: 2px solid black;
+}
+
+#card-outside {
+    background-color: antiquewhite;
+    width: 700px;
+    border: 3px solid black;
+    ;
+}
+
+.clue-cards {
+    width: 100px;
+}
+
+#s1,
+#r1,
+#g1 {
+    grid-area: cardOne;
+}
+
+#s2,
+#r2,
+#g2 {
+    grid-area: cardTwo;
+}
+
+#s3,
+#r3,
+#g3 {
+    grid-area: cardThree;
+}
+
+#s4,
+#r4,
+#g4 {
+    grid-area: cardFour;
+}
+
+#s5,
+#r5,
+#g5 {
+    grid-area: cardFive;
+}
+
+#s6,
+#r6,
+#g6 {
+    grid-area: cardSix;
+}
+
+#r7 {
+    grid-area: cardSeven;
+}
+
+.clue-cards {
+    margin: 15px 5px 0 5px;
 }
