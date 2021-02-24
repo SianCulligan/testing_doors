@@ -176,7 +176,6 @@ li {
 
 a.modal-open,
 a.two-modal-open {
-    background-image: url("Img/mapIcon");
     text-decoration: none;
 }
 
@@ -332,7 +331,6 @@ a.two-modal-open {
     width: 500px;
     height: 700px;
     overflow: scroll;
-    background-image: url("Img/wb_wheels/png");
 }
 
 .modal-window-two div:not(:last-of-type) {
@@ -421,5 +419,15 @@ a.two-modal-open {
 }
 
 .clue-cards {
-    margin: 15px 5px 0 5px;
+    margin: 15px 1px 0 1px;
+    border: 3px solid black;
+}
+
+#s3,
+#s6 {
+    height: 145.5px;
+}
+
+.card-head {
+    color: rgb(152, 1, 1);
 }
