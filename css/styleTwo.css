@@ -394,20 +394,19 @@
         margin-top: -500px;
     }
     #cat {
-        position: fixed;
-        width: 350px;
-        height: auto;
+        width: 200px;
+        height: 375px;
         bottom: 0;
-        left: 0;
+        margin: 0px auto;
     }
     div .neon {
-        font-size: 80px;
+        font-size: 60px;
         color: #FFD5FF;
         position: absolute;
         font-family: arial;
         top: 50%;
         left: 50%;
-        font-weight: 415;
+        font-weight: 405;
         letter-spacing: 7px;
         text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA, 40px 0vw 200px #D42CCA;
         transform: translate(-50%, -50%);
@@ -476,12 +475,6 @@
     }
     #table {
         grid-area: table;
-    }
-    .picContainer {
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: auto;
-        grid-template-areas: "dogOne dogTwo dogThree" "table table table";
     }
     .demo_container {
         margin-top: 7%;
@@ -575,7 +568,7 @@ a.modal-open {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 500px;
+    width: 560px;
     background-image: url("https://i.pinimg.com/originals/4c/65/f9/4c65f913798dcd566fb929d0973a37e6.jpg");
     border-radius: 4px;
     transform: translate(-50%, -200%);
@@ -676,4 +669,168 @@ a.modal-open {
 
 .img-stack:hover {
     z-index: 1;
+}
+
+.eight,
+.nine,
+.ten {
+    background-color: black;
+}
+
+.suspect,
+.object,
+.place {
+    width: 180px;
+    height: 265px;
+}
+
+#sus-one,
+#obj-one,
+#plc-one {
+    grid-area: one;
+}
+
+#sus-two,
+#obj-two,
+#plc-two {
+    grid-area: two;
+}
+
+#obj-two {
+    height: 275px;
+    margin-top: -5px;
+}
+
+#sus-three,
+#obj-three,
+#plc-three {
+    grid-area: three;
+}
+
+#sus-three {
+    height: 272px;
+}
+
+#sus-four,
+#obj-four,
+#plc-four {
+    grid-area: four;
+}
+
+#sus-five,
+#obj-five,
+#plc-five {
+    grid-area: five;
+}
+
+#plc-five {
+    margin-left: 90px;
+}
+
+#sus-six,
+#obj-six,
+#plc-six {
+    grid-area: six;
+    height: 275px;
+    margin-top: -5px;
+}
+
+#obj-six {
+    width: 185px;
+}
+
+#plc-seven {
+    grid-area: seven;
+    margin-right: 90px;
+    height: 270px;
+    margin-top: -5px;
+}
+
+.row-container,
+.obj-container {
+    margin: auto;
+    text-align: center;
+    padding-top: 35px;
+    width: 750px;
+    height: 580px;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: "one two three" "four five six";
+}
+
+.plc-container {
+    margin: auto;
+    padding-top: 35px;
+    width: 750px;
+    height: 580px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 187px 187px 187px 187px;
+    grid-template-rows: auto;
+    grid-template-areas: "one two three four" "five six six seven"
+}
+
+.team-cards {
+    width: 235px;
+    height: 350px;
+    margin-bottom: -353px;
+}
+
+.intro:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.5);
+    z-index: 999999;
+}
+
+.intro-text:hover {
+    transition: all .7s ease-in-out;
+    opacity: 1;
+}
+
+.intro-text {
+    color: whitesmoke;
+    font-family: monospace;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0, 0.75);
+    width: 220px;
+    height: 350px;
+    opacity: 0;
+}
+
+small {
+    font-size: 15px;
+}
+
+#kim {
+    padding-top: 5px;
+    line-height: .95;
+    height: 345px;
+}
+
+#forSpace {
+    margin-top: -50px;
+    font-size: 30px;
+    margin-bottom: -25px;
+}
+
+#sg_card_one,
+#sg_card_two,
+#sg_card_three,
+#sg_card_four,
+#sg_card_five {
+    width: 200px;
+    height: auto;
+}
+
+h6 {
+    padding: 5px 0;
+    font-size: 30px;
+    font-family: 'Sigmar One', cursive;
 }
