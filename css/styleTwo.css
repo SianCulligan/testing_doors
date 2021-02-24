@@ -567,14 +567,48 @@ a.modal-open {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 560px;
-    background-image: url("https://i.pinimg.com/originals/4c/65/f9/4c65f913798dcd566fb929d0973a37e6.jpg");
-    border-radius: 4px;
+    width: 700px;
+    height: 700px;
+    /* background-image: url("https://i.pinimg.com/originals/4c/65/f9/4c65f913798dcd566fb929d0973a37e6.jpg"); */
+    background-image: url("https://www.securityproductsinc.com/sites/default/files/styles/uc_product_full/public/products/peek_o_outside_view_satin_nickle.png?itok=IuwA3BVQ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    border-radius: 50%;
     transform: translate(-50%, -200%);
     transition: all .5s ease-in-out;
     perspective: 1000;
     outline: 1px solid transparent;
     opacity: 0;
+}
+
+.player {
+    /* background-color: #D42CCA; */
+    position: fixed;
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+}
+
+iframe {
+    margin-top: 180px;
+    margin-left: -50px;
+    height: 350px;
+    opacity: 0;
+}
+
+iframe:hover {
+    animation: fadeIn ease 4s;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .modal:target .modal-content {
