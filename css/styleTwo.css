@@ -96,6 +96,12 @@
         background-size: cover;
         background-position: left;
     }
+    .layer.eleven {
+        background: url("../Img/clue_35.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
     .kontext {
         width: 100%;
         height: 100%;
@@ -818,6 +824,7 @@ iframe:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.5);
     z-index: 999999;
+    filter: hue-rotate(0deg)
 }
 
 .intro-text:hover {
@@ -833,7 +840,7 @@ iframe:hover {
     font-size: 30px;
     background-color: rgb(0, 0, 0, 0.75);
     width: 220px;
-    height: 350px;
+    height: 375px;
     opacity: 0;
 }
 
@@ -857,7 +864,10 @@ small {
 #sg_card_two,
 #sg_card_three,
 #sg_card_four,
-#sg_card_five {
+#sg_card_five,
+#sg_card_six,
+#sg_card_seven,
+#sg_card_eight {
     width: 200px;
     height: auto;
 }
@@ -866,4 +876,14 @@ h6 {
     padding: 5px 0;
     font-size: 30px;
     font-family: 'Sigmar One', cursive;
+}
+
+.qr {
+    filter: hue-rotate(310deg);
+    text-align: center;
+    left: 50%;
+    margin: 0px auto;
+    width: 75px;
+    clear: both;
+    margin-left: 55px;
 }
