@@ -166,9 +166,10 @@ li {
     font-weight: 800;
 }
 
-#robin {
+
+/* #robin {
     margin-bottom: -20px;
-}
+} */
 
 #campus {
     width: 700px;
@@ -367,11 +368,17 @@ a.two-modal-open {
     border: 2px solid black;
 }
 
+#backgroundHelper {
+    background-image: url("https://i.pinimg.com/originals/6f/a6/61/6fa6616ba2cdc63d1f4f34ae06006bd0.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
 #card-outside {
     background-color: antiquewhite;
     width: 700px;
     border: 3px solid black;
-    ;
 }
 
 .clue-cards {
@@ -423,11 +430,23 @@ a.two-modal-open {
     border: 3px solid black;
 }
 
+.clue-cards:hover {
+    transform: scale(1.3);
+}
+
 #s3,
 #s6 {
     height: 145.5px;
 }
 
+#s4 {
+    height: 145px;
+}
+
 .card-head {
     color: rgb(152, 1, 1);
+}
+
+#s4:hover {
+    transform: scale(1.9);
 }
